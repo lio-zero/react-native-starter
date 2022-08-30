@@ -1,19 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
     "jsx": "react",
     "strict": true,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
-    "resolveJsonModule": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ],
     "isolatedModules": true,
     "noLib": false,
     "useDefineForClassFields": true,
@@ -24,8 +16,17 @@
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "newLine": "lf",
-    "removeComments": true,
-    "skipLibCheck": true
+    "removeComments": true
   },
-  "extends": "expo/tsconfig.base"
+  "paths": {
+    "*": [
+      "src/*"
+    ]
+  },
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ]
 }
