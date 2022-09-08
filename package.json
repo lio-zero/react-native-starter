@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint --ext js,ts,tsx ."
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.0",

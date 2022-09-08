@@ -1,32 +1,21 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "esnext",
-    "jsx": "react",
+    "module": "ESNext",
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
     "isolatedModules": true,
-    "noLib": false,
     "useDefineForClassFields": true,
     "allowSyntheticDefaultImports": true,
-    "strictFunctionTypes": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "newLine": "lf",
-    "removeComments": true
+    "noUnusedLocals": true
   },
-  "paths": {
-    "*": [
-      "src/*"
-    ]
-  },
-  "extends": "expo/tsconfig.base",
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js"
-  ]
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "App.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
 }
